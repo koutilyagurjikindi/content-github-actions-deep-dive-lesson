@@ -3,7 +3,9 @@
 name: Placeholder
 
 on: 
-  - push
+  push:
+    branches:
+      - main
 
 jobs:
   init:
