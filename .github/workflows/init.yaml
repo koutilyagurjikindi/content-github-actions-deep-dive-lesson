@@ -24,10 +24,10 @@ jobs:
         run: |
           git config --global user.email "koutilyagurjikindi@gmail.com"
           git config --global user.name "koutilya06"
-          git checkout -b ${{ github.sha }}
+          git checkout -b sg-test
           git add .
           git commit -m "changes"
-          git push origin ${{ github.sha }}
+          git push origin sg-test
       - name: Create zip bundle
         run: |
           cd function
