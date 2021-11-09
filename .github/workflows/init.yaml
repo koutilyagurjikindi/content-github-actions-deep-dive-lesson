@@ -32,6 +32,7 @@ jobs:
         run: |
           cd function
           zip -r ../${{ github.sha }}.zip .
+          ls
       - name: Archieve artifact
         uses: actions/upload-artifact@v2
         with:
